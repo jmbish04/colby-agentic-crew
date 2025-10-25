@@ -1,0 +1,80 @@
+# .github/workflows/import-cloudflare-patterns.yml
+name: Import Cloudflare patterns
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "vendor | subtree | submodule"
+        required: true
+        default: "vendor"
+      dry_run:
+        description: "true to preview"
+        required: true
+        default: "true"
+  schedule:
+    - cron: "15 6 * * 1"  # Mondays 06:15 UTC
+  push:
+    paths:
+      - ".github/workflows/import-cloudflare-patterns.yml"
+      - "scripts/import_cloudflare.py"
+
+permissions:
+  contents: write   # needed to commit results
+  actions: read
+  id-token: write
+
+env:
+  TARGET_ORG: cloudflare
+  KEYWORDS: "agents,durable-objects,actors,sandbox,containers,workflows,queues,shadcn,react,ai,sdk"
+  ALLOW_TOPICS: "cloudflare,workers,durable-objects,actors,agents,queues,workflows"
+  VENDOR_DIR: "vendor/cloudflare"
+  DOCS_DIR: "repo_root/docs"
+  OPENAI_PROXY_URL: ${{ secrets.OPENAI_PROXY_URL }}
+  OPENAI_PROXY_TOKEN: ${{ secrets.OPENAI_PROXY_TOKEN }}
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests PyGithub pyyaml
+
+      - name: Run importer (preview or write)
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # PAT or GITHUB_TOKEN if org allows
+          MODE: ${{ inputs.mode || 'vendor' }}
+          DRY_RUN: ${{ inputs.dry_run || 'true' }}
+        run: |
+          python scripts/import_cloudflare.py \
+            --org "$TARGET_ORG" \
+            --keywords "$KEYWORDS" \
+            --allow-topics "$ALLOW_TOPICS" \
+            --vendor-dir "$VENDOR_DIR" \
+            --docs-dir "$DOCS_DIR" \
+            --mode "$MODE" \
+            --dry-run "$DRY_RUN"
+
+      - name: Commit changes
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Import Cloudflare patterns (mode=${{ inputs.mode }})"
+            git push
+          else
+            echo "No changes to commit."
+          fi
