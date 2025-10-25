@@ -1,0 +1,96 @@
+As an expert AI assistant specializing in Cloudflare Workers and agentic systems, here is the complete, production-ready `wrangler.toml` configuration for your project, `colby-agentic-crew`.
+
+This configuration includes all specified bindings, using placeholders for IDs that must be generated when you run `wrangler deploy` or `wrangler d1 create`/`wrangler kv namespace create`.
+
+## `wrangler.toml`
+
+```toml
+# ==============================================================================
+# CORE WORKER CONFIGURATION
+# ==============================================================================
+name = "colby-agentic-crew"
+main = "src/index.ts"
+compatibility_date = "2024-05-15"
+workers_dev = true
+
+# Assuming you are using TypeScript, ensure your build process handles it.
+# If using the standard 'npm create cloudflare@latest', this is usually handled.
+# build = { command = "npm run build" }
+
+
+# ==============================================================================
+# DURABLE OBJECTS (AGENT STATE MANAGEMENT)
+# Binding: AGENT_SUPERVISOR
+# Class: AgentSupervisor
+# ==============================================================================
+[[durable_objects.bindings]]
+name = "AGENT_SUPERVISOR"
+class_name = "AgentSupervisor"
+
+# Define the Durable Object migration configuration
+# This ensures the DO namespace is created and managed.
+[[migrations]]
+tag = "v1"
+new_classes = ["AgentSupervisor"]
+
+
+# ==============================================================================
+# KV NAMESPACE (CREW MEMORY & CONFIGURATION)
+# Binding: CREW_MEMORY_KV
+# ==============================================================================
+[[kv_namespaces]]
+binding = "CREW_MEMORY_KV"
+# IMPORTANT: Replace this placeholder ID after running:
+# wrangler kv namespace create CREW_MEMORY_KV
+id = "CREW_MEMORY_KV_ID_PLACEHOLDER"
+
+
+# ==============================================================================
+# D1 DATABASE (CREW STATE & LOGGING)
+# Binding: CREW_STATE_DB
+# ==============================================================================
+[[d1_databases]]
+binding = "CREW_STATE_DB"
+database_name = "colby_crew_state"
+# IMPORTANT: Replace this placeholder ID after running:
+# wrangler d1 create colby_crew_state
+database_id = "CREW_STATE_DB_ID_PLACEHOLDER"
+
+
+# ==============================================================================
+# R2 BUCKET (AGENT ARTIFACTS & LARGE FILE STORAGE)
+# Binding: AGENT_ARTIFACTS_R2
+# ==============================================================================
+[[r2_buckets]]
+binding = "AGENT_ARTIFACTS_R2"
+bucket_name = "colby-agent-artifacts"
+# Note: R2 buckets are globally unique by name, so no ID is required here.
+
+# ==============================================================================
+# ENVIRONMENT VARIABLES (Example: API Keys)
+# ==============================================================================
+[vars]
+# OPENAI_API_KEY = "..."
+# AGENT_LOG_LEVEL = "info"
+```
+
+### Next Steps (Required Setup)
+
+Before deploying, you must create the resources bound by ID:
+
+1.  **Create KV Namespace:**
+    ```bash
+    wrangler kv namespace create CREW_MEMORY_KV
+    # Copy the resulting ID into the `wrangler.toml` file.
+    ```
+
+2.  **Create D1 Database:**
+    ```bash
+    wrangler d1 create colby_crew_state
+    # Copy the resulting database_id into the `wrangler.toml` file.
+    ```
+
+3.  **Deploy the Worker:**
+    ```bash
+    wrangler deploy
+    ```
