@@ -1,0 +1,770 @@
+{
+  "total": 116,
+  "mode": "vendor",
+  "dry_run": true,
+  "imported": [
+    {
+      "repo": "cloudflare/quiche",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": [
+        ".github/workflows/deploy.yml",
+        ".github/workflows/nightly.yml",
+        ".github/workflows/semgrep.yml",
+        ".github/workflows/stable.yml",
+        "README.md",
+        "apps/src/args.rs",
+        "apps/src/bin/cert.crt",
+        "apps/src/bin/cert.key",
+        "apps/src/bin/quiche-client.rs",
+        "apps/src/bin/quiche-server.rs",
+        "apps/src/client.rs",
+        "apps/src/common.rs",
+        "apps/src/lib.rs",
+        "apps/src/sendto.rs",
+        "buffer-pool/src/buffer.rs",
+        "buffer-pool/src/lib.rs",
+        "buffer-pool/src/raw_pool_buf_io.rs",
+        "datagram-socket/src/datagram.rs",
+        "datagram-socket/src/lib.rs",
+        "datagram-socket/src/mmsg.rs"
+      ]
+    },
+    {
+      "repo": "cloudflare/workerd",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": [
+        ".github/workflows/_bazel.yml",
+        ".github/workflows/_wpt.yml",
+        ".github/workflows/cla.yml",
+        ".github/workflows/codspeed.yml",
+        ".github/workflows/daily-release.yml",
+        ".github/workflows/deps-updater.yml",
+        ".github/workflows/experimental-workflow.yml",
+        ".github/workflows/fixup.yml",
+        ".github/workflows/internal-build.yml",
+        ".github/workflows/issues.yml",
+        ".github/workflows/labels.yml",
+        ".github/workflows/lint.yml",
+        ".github/workflows/release-python-runtime.yml",
+        ".github/workflows/release-python-snapshots.yml",
+        ".github/workflows/release.yml",
+        ".github/workflows/semgrep.yml",
+        ".github/workflows/test.yml",
+        ".github/workflows/wpt-report.yml",
+        "README.md",
+        "samples/hello-wasm/src/lib.rs"
+      ]
+    },
+    {
+      "repo": "cloudflare/flan",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": [
+        ".github/workflows/semgrep.yml",
+        "README.md",
+        "contrib/report_builders/templates/jinja2_report.html"
+      ]
+    },
+    {
+      "repo": "cloudflare/cloudflare-docs",
+      "branch": "production",
+      "mode": "vendor",
+      "paths": [
+        ".github/workflows/anchor-link-audit.yml",
+        ".github/workflows/ci.yml",
+        ".github/workflows/holopin.yml",
+        ".github/workflows/image-audit.yml",
+        ".github/workflows/issue-label-assign.yml",
+        ".github/workflows/no-response.yml",
+        ".github/workflows/potential-redirects-or-partials.yml",
+        ".github/workflows/pr-label-assign.yml",
+        ".github/workflows/publish-preview.yml",
+        ".github/workflows/publish-production.yml",
+        ".github/workflows/semgrep.yml",
+        ".github/workflows/update-api-schemas.yml",
+        "README.md",
+        "public/images/queues/queues-event-subscriptions.png",
+        "src/assets/Dev-Docs-Header-Illustration-Dark-Mode-cropped.svg",
+        "src/assets/Dev-Docs-Header-Illustration-Dark-Mode.svg",
+        "src/assets/Dev-Docs-Header-Illustration-Light-Mode-cropped.svg",
+        "src/assets/Dev-Docs-Header-Illustration-Light-Mode.svg",
+        "src/assets/cloudflare-stack.jpg",
+        "src/assets/developer-platform-dark.svg"
+      ]
+    },
+    {
+      "repo": "cloudflare/miniflare",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/workers-sdk",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/capnweb",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/wrangler-legacy",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/workers-rs",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/mcp-server-cloudflare",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/agents",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/vibesdk",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/ebpf_exporter",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/orange",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/wildebeest",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/cloudflare-go",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/workers-oauth-provider",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/wrangler-action",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/foundations",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/redoctober",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/cf-ui",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/serverless-registry",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/cf-terraforming",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/terraform-provider-cloudflare",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/workers-chat-demo",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/agents-starter",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/goflow",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/mitmengine",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/partykit",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/ai",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/workers-graphql-server",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/Stout",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/unsee",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/cloudflare-php",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/workers-mcp",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/cloudflare-typescript",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/react-gateway",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/sandbox",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/stpyv8",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/pages-action",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/sandbox-sdk",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/nginx-google-oauth",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/rustwasm-worker-template",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/pp-browser-extension",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/node-cloudflare",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/gortr",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/dog",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/react-modal2",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/kv-asset-handler",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/pmtud",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/actors",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/doca",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/certmgr",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/playwright-mcp",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/containers-demos",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/containers",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/stream-react",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/flow-pipeline",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/doom-workers",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/cfnts",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/queues-web-crawler",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/cfrpki",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/ai-utils",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/d1-northwind",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/jpegtran",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/workers-aws-template",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/slirpnetstack",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/serverless-action",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/udpgrm",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/workers-ai-provider",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/workers-react-pwa-example",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/pal",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/workers-honeycomb-logger",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/web-bot-auth",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/complainer",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/logshare",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/workers-airtable-form",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/postgres-postgrest-cloudflared-example",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/docker-phan",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/durable-objects-template",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/authr",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/durable-objects-typescript-rollup-esm",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/react-workers-template",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/vibesdk-templates",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/wasm-coredump",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/cf-identity-dynamic",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/workflows-starter",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/a11y-focus-scope",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/ipfs-gateway-monitor",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/cloudflare-plugin-frontend",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/docker-opentsdb",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/durable-objects-rollup-esm",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/cloudflare.design",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/cfdeploy",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/realtimekit-ui",
+      "branch": "staging",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/a11y-focus-store",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/boringssl-pq",
+      "branch": "pq",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/notebook-examples",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/redux-grim",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/privacy-gateway-client-library",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/durable-objects-webpack-commonjs",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/devweek",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/stream-angular",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/doca-bootstrap-theme",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/bbperf",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/nel-rs",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/developer-summer-challenge",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/hello-world-container-image",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/ui-migration-stats",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/realtimekit-web-examples",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/python-cloudflare-cli4",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/modules-webpack-commonjs",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/exim-cve-2019-10149-data",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/quiche-mallard",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/telescope",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/react-router-hono-fullstack-template",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    }
+  ]
+}
