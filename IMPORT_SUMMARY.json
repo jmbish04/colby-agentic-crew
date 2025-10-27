@@ -98,31 +98,136 @@
       "repo": "cloudflare/miniflare",
       "branch": "master",
       "mode": "vendor",
-      "paths": []
+      "paths": [
+        ".github/workflows/issues.yml",
+        ".github/workflows/release.yml",
+        ".github/workflows/semgrep.yml",
+        ".github/workflows/test.yml",
+        "README.md",
+        "docs/src/content/components/icons/api.js",
+        "docs/src/content/components/icons/cli.js",
+        "docs/src/content/components/icons/wrangler.js",
+        "docs/src/content/components/mdx/config-tabs.css",
+        "docs/src/content/components/mdx/config-tabs.js",
+        "docs/src/content/core/compatibility.md",
+        "docs/src/content/core/fetch.md",
+        "docs/src/content/core/index.md",
+        "docs/src/content/core/modules.md",
+        "docs/src/content/core/multiple-workers.md",
+        "docs/src/content/core/queues.md",
+        "docs/src/content/core/scheduled.md",
+        "docs/src/content/core/standards.md",
+        "docs/src/content/core/variables-secrets.md",
+        "docs/src/content/core/web-assembly.md"
+      ]
     },
     {
       "repo": "cloudflare/workers-sdk",
       "branch": "main",
       "mode": "vendor",
-      "paths": []
+      "paths": [
+        ".github/workflows/README.md",
+        ".github/workflows/auto-assign-issues.yml",
+        ".github/workflows/c3-dependabot-versioning-prs.yml",
+        ".github/workflows/c3-e2e.yml",
+        ".github/workflows/changesets.yml",
+        ".github/workflows/claude.yml",
+        ".github/workflows/deploy-pages-previews.yml",
+        ".github/workflows/e2e-project-cleanup.yml",
+        ".github/workflows/e2e.yml",
+        ".github/workflows/holopin.yml",
+        ".github/workflows/hotfix-release.yml",
+        ".github/workflows/issues.yml",
+        ".github/workflows/miniflare-dependabot-versioning-prs.yml",
+        ".github/workflows/open-v3-maintenance-prs.yml",
+        ".github/workflows/prerelease.yml",
+        ".github/workflows/run-ci-for-external-forks.yml",
+        ".github/workflows/semgrep.yml",
+        ".github/workflows/test-and-check.yml",
+        ".github/workflows/validate-pr-description.yml",
+        ".github/workflows/worker-playground-preview-testing-env-deploy-and-test.yml"
+      ]
     },
     {
       "repo": "cloudflare/capnweb",
       "branch": "main",
       "mode": "vendor",
-      "paths": []
+      "paths": [
+        ".github/workflows/test.yml",
+        "README.md",
+        "examples/README.md",
+        "examples/batch-pipelining/README.md",
+        "examples/batch-pipelining/client.mjs",
+        "examples/batch-pipelining/server-node.mjs",
+        "examples/worker-react/README.md",
+        "examples/worker-react/src/worker.ts",
+        "examples/worker-react/web/index.html",
+        "examples/worker-react/web/package-lock.json",
+        "examples/worker-react/web/package.json",
+        "examples/worker-react/web/src/main.tsx",
+        "examples/worker-react/web/src/main/App.tsx",
+        "examples/worker-react/web/tsconfig.json",
+        "examples/worker-react/web/vite.config.ts",
+        "examples/worker-react/wrangler.toml",
+        "src/batch.ts",
+        "src/core.ts",
+        "src/index.ts",
+        "src/map.ts"
+      ]
     },
     {
       "repo": "cloudflare/wrangler-legacy",
       "branch": "master",
       "mode": "vendor",
-      "paths": []
+      "paths": [
+        ".github/workflows/audit.yml",
+        ".github/workflows/lint.yml",
+        ".github/workflows/release.yml",
+        ".github/workflows/test.yml",
+        "README.md",
+        "src/build/mod.rs",
+        "src/cli/build.rs",
+        "src/cli/config.rs",
+        "src/cli/dev.rs",
+        "src/cli/generate.rs",
+        "src/cli/init.rs",
+        "src/cli/kv.rs",
+        "src/cli/login.rs",
+        "src/cli/logout.rs",
+        "src/cli/mod.rs",
+        "src/cli/preview.rs",
+        "src/cli/publish.rs",
+        "src/cli/r2.rs",
+        "src/cli/route.rs",
+        "src/cli/secret.rs"
+      ]
     },
     {
       "repo": "cloudflare/workers-rs",
       "branch": "main",
       "mode": "vendor",
-      "paths": []
+      "paths": [
+        ".github/workflows/create-release-pr.yml",
+        ".github/workflows/create-release.yml",
+        ".github/workflows/pullrequest.yml",
+        ".github/workflows/semgrep.yml",
+        "README.md",
+        "examples/axum/.gitignore",
+        "examples/axum/Cargo.lock",
+        "examples/axum/Cargo.toml",
+        "examples/axum/README.md",
+        "examples/axum/package.json",
+        "examples/axum/src/lib.rs",
+        "examples/axum/wrangler.toml",
+        "examples/coredump/README.md",
+        "examples/custom-req/.gitignore",
+        "examples/custom-req/Cargo.toml",
+        "examples/custom-req/README.md",
+        "examples/custom-req/package.json",
+        "examples/custom-req/src/lib.rs",
+        "examples/custom-req/wrangler.toml",
+        "examples/digest/.gitignore"
+      ]
     },
     {
       "repo": "cloudflare/mcp-server-cloudflare",
@@ -167,13 +272,13 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/workers-oauth-provider",
+      "repo": "cloudflare/wrangler-action",
       "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/wrangler-action",
+      "repo": "cloudflare/workers-oauth-provider",
       "branch": "main",
       "mode": "vendor",
       "paths": []
@@ -191,14 +296,14 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/cf-ui",
-      "branch": "master",
+      "repo": "cloudflare/serverless-registry",
+      "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/serverless-registry",
-      "branch": "main",
+      "repo": "cloudflare/cf-ui",
+      "branch": "master",
       "mode": "vendor",
       "paths": []
     },
@@ -395,13 +500,13 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/containers-demos",
+      "repo": "cloudflare/containers",
       "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/containers",
+      "repo": "cloudflare/containers-demos",
       "branch": "main",
       "mode": "vendor",
       "paths": []
@@ -413,14 +518,14 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/flow-pipeline",
-      "branch": "master",
+      "repo": "cloudflare/doom-workers",
+      "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/doom-workers",
-      "branch": "main",
+      "repo": "cloudflare/flow-pipeline",
+      "branch": "master",
       "mode": "vendor",
       "paths": []
     },
