@@ -1,5 +1,5 @@
 {
-  "total": 116,
+  "total": 118,
   "mode": "vendor",
   "dry_run": true,
   "imported": [
@@ -74,6 +74,7 @@
       "paths": [
         ".github/workflows/anchor-link-audit.yml",
         ".github/workflows/ci.yml",
+        ".github/workflows/close-stale-issues-prs.yml",
         ".github/workflows/holopin.yml",
         ".github/workflows/image-audit.yml",
         ".github/workflows/issue-label-assign.yml",
@@ -90,8 +91,7 @@
         "src/assets/Dev-Docs-Header-Illustration-Dark-Mode.svg",
         "src/assets/Dev-Docs-Header-Illustration-Light-Mode-cropped.svg",
         "src/assets/Dev-Docs-Header-Illustration-Light-Mode.svg",
-        "src/assets/cloudflare-stack.jpg",
-        "src/assets/developer-platform-dark.svg"
+        "src/assets/cloudflare-stack.jpg"
       ]
     },
     {
@@ -152,82 +152,19 @@
       "repo": "cloudflare/capnweb",
       "branch": "main",
       "mode": "vendor",
-      "paths": [
-        ".github/workflows/test.yml",
-        "README.md",
-        "examples/README.md",
-        "examples/batch-pipelining/README.md",
-        "examples/batch-pipelining/client.mjs",
-        "examples/batch-pipelining/server-node.mjs",
-        "examples/worker-react/README.md",
-        "examples/worker-react/src/worker.ts",
-        "examples/worker-react/web/index.html",
-        "examples/worker-react/web/package-lock.json",
-        "examples/worker-react/web/package.json",
-        "examples/worker-react/web/src/main.tsx",
-        "examples/worker-react/web/src/main/App.tsx",
-        "examples/worker-react/web/tsconfig.json",
-        "examples/worker-react/web/vite.config.ts",
-        "examples/worker-react/wrangler.toml",
-        "src/batch.ts",
-        "src/core.ts",
-        "src/index.ts",
-        "src/map.ts"
-      ]
+      "paths": []
     },
     {
       "repo": "cloudflare/wrangler-legacy",
       "branch": "master",
       "mode": "vendor",
-      "paths": [
-        ".github/workflows/audit.yml",
-        ".github/workflows/lint.yml",
-        ".github/workflows/release.yml",
-        ".github/workflows/test.yml",
-        "README.md",
-        "src/build/mod.rs",
-        "src/cli/build.rs",
-        "src/cli/config.rs",
-        "src/cli/dev.rs",
-        "src/cli/generate.rs",
-        "src/cli/init.rs",
-        "src/cli/kv.rs",
-        "src/cli/login.rs",
-        "src/cli/logout.rs",
-        "src/cli/mod.rs",
-        "src/cli/preview.rs",
-        "src/cli/publish.rs",
-        "src/cli/r2.rs",
-        "src/cli/route.rs",
-        "src/cli/secret.rs"
-      ]
+      "paths": []
     },
     {
       "repo": "cloudflare/workers-rs",
       "branch": "main",
       "mode": "vendor",
-      "paths": [
-        ".github/workflows/create-release-pr.yml",
-        ".github/workflows/create-release.yml",
-        ".github/workflows/pullrequest.yml",
-        ".github/workflows/semgrep.yml",
-        "README.md",
-        "examples/axum/.gitignore",
-        "examples/axum/Cargo.lock",
-        "examples/axum/Cargo.toml",
-        "examples/axum/README.md",
-        "examples/axum/package.json",
-        "examples/axum/src/lib.rs",
-        "examples/axum/wrangler.toml",
-        "examples/coredump/README.md",
-        "examples/custom-req/.gitignore",
-        "examples/custom-req/Cargo.toml",
-        "examples/custom-req/README.md",
-        "examples/custom-req/package.json",
-        "examples/custom-req/src/lib.rs",
-        "examples/custom-req/wrangler.toml",
-        "examples/digest/.gitignore"
-      ]
+      "paths": []
     },
     {
       "repo": "cloudflare/mcp-server-cloudflare",
@@ -338,14 +275,14 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/mitmengine",
-      "branch": "master",
+      "repo": "cloudflare/partykit",
+      "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/partykit",
-      "branch": "main",
+      "repo": "cloudflare/mitmengine",
+      "branch": "master",
       "mode": "vendor",
       "paths": []
     },
@@ -494,13 +431,13 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/playwright-mcp",
+      "repo": "cloudflare/containers",
       "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/containers",
+      "repo": "cloudflare/playwright-mcp",
       "branch": "main",
       "mode": "vendor",
       "paths": []
@@ -566,6 +503,12 @@
       "paths": []
     },
     {
+      "repo": "cloudflare/udpgrm",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
       "repo": "cloudflare/workers-aws-template",
       "branch": "master",
       "mode": "vendor",
@@ -584,12 +527,6 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/udpgrm",
-      "branch": "main",
-      "mode": "vendor",
-      "paths": []
-    },
-    {
       "repo": "cloudflare/workers-ai-provider",
       "branch": "main",
       "mode": "vendor",
@@ -602,6 +539,12 @@
       "paths": []
     },
     {
+      "repo": "cloudflare/web-bot-auth",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
       "repo": "cloudflare/pal",
       "branch": "master",
       "mode": "vendor",
@@ -609,12 +552,6 @@
     },
     {
       "repo": "cloudflare/workers-honeycomb-logger",
-      "branch": "main",
-      "mode": "vendor",
-      "paths": []
-    },
-    {
-      "repo": "cloudflare/web-bot-auth",
       "branch": "main",
       "mode": "vendor",
       "paths": []
@@ -644,6 +581,12 @@
       "paths": []
     },
     {
+      "repo": "cloudflare/telescope",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
       "repo": "cloudflare/docker-phan",
       "branch": "master",
       "mode": "vendor",
@@ -662,6 +605,12 @@
       "paths": []
     },
     {
+      "repo": "cloudflare/vibesdk-templates",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
       "repo": "cloudflare/durable-objects-typescript-rollup-esm",
       "branch": "master",
       "mode": "vendor",
@@ -670,12 +619,6 @@
     {
       "repo": "cloudflare/react-workers-template",
       "branch": "master",
-      "mode": "vendor",
-      "paths": []
-    },
-    {
-      "repo": "cloudflare/vibesdk-templates",
-      "branch": "main",
       "mode": "vendor",
       "paths": []
     },
@@ -716,6 +659,12 @@
       "paths": []
     },
     {
+      "repo": "cloudflare/awesome-agents",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
       "repo": "cloudflare/docker-opentsdb",
       "branch": "master",
       "mode": "vendor",
@@ -724,6 +673,12 @@
     {
       "repo": "cloudflare/durable-objects-rollup-esm",
       "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/realtimekit-ui",
+      "branch": "staging",
       "mode": "vendor",
       "paths": []
     },
@@ -740,26 +695,20 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/realtimekit-ui",
-      "branch": "staging",
-      "mode": "vendor",
-      "paths": []
-    },
-    {
       "repo": "cloudflare/a11y-focus-store",
       "branch": "master",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/boringssl-pq",
-      "branch": "pq",
+      "repo": "cloudflare/notebook-examples",
+      "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/notebook-examples",
-      "branch": "main",
+      "repo": "cloudflare/boringssl-pq",
+      "branch": "pq",
       "mode": "vendor",
       "paths": []
     },
@@ -854,13 +803,13 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/quiche-mallard",
+      "repo": "cloudflare/tf-migrate",
       "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/telescope",
+      "repo": "cloudflare/quiche-mallard",
       "branch": "main",
       "mode": "vendor",
       "paths": []
