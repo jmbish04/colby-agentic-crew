@@ -1,0 +1,27 @@
+name = "core-gh-action-researcher"
+main = "src/index.ts"
+compatibility_date = "2024-05-01"
+
+# Observability Logs
+[observability]
+enabled = true
+
+# Bind Workers AI
+[ai]
+binding = "AI"
+
+# Bind your D1 database
+[[d1_databases]]
+binding = "DB"
+database_name = "core-gh-action-researcher",
+database_id = "7bf8cf9c-d9bb-4e97-8c6b-af4c13565546"
+migrations_dir = "migrations"
+
+# Bind your Vectorize index
+# wrangler vectorize create core-github-actions-researcher  --preset @cf/baai/bge-large-en-v1.5
+[vectorize]
+binding = "VECTOR_INDEX"
+index_name = "core-github-actions-researcher"
+
+# secret
+# WORKER_API_KEY (the key github uses to auth with this worker endpoint -- set as a secret on the worker)
