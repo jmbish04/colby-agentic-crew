@@ -2,7 +2,7 @@
 
 **Proxy summarize unavailable** — proceeding with metadata only.
 
-Error: HTTP 404: {"error":{"message":"Not Found","type":"invalid_request_error"}}
+Error: HTTP 401: {"error":{"message":"Invalid API key","type":"invalid_request_error"}}
 
 Metadata:
 ```json
@@ -74,6 +74,30 @@ Metadata:
     "netlog/src/quic.rs",
     "octets/src/huffman_table.rs",
     "octets/src/lib.rs",
+    "qlog-dancer/src/config.rs",
+    "qlog-dancer/src/datastore.rs",
+    "qlog-dancer/src/lib.rs",
+    "qlog-dancer/src/main.rs",
+    "qlog-dancer/src/plots/colors.rs",
+    "qlog-dancer/src/plots/congestion_control.rs",
+    "qlog-dancer/src/plots/conn_flow_control.rs",
+    "qlog-dancer/src/plots/conn_overview.rs",
+    "qlog-dancer/src/plots/minmax.rs",
+    "qlog-dancer/src/plots/mod.rs",
+    "qlog-dancer/src/plots/packet_received.rs",
+    "qlog-dancer/src/plots/packet_sent.rs",
+    "qlog-dancer/src/plots/pending.rs",
+    "qlog-dancer/src/plots/rtt.rs",
+    "qlog-dancer/src/plots/stream_multiplex.rs",
+    "qlog-dancer/src/plots/stream_sparks.rs",
+    "qlog-dancer/src/reports/events.rs",
+    "qlog-dancer/src/reports/html.rs",
+    "qlog-dancer/src/reports/mod.rs",
+    "qlog-dancer/src/reports/text.rs",
+    "qlog-dancer/src/request_stub.rs",
+    "qlog-dancer/src/seriesstore.rs",
+    "qlog-dancer/src/web.rs",
+    "qlog-dancer/src/wirefilter.rs",
     "qlog/src/events/connectivity.rs",
     "qlog/src/events/h3.rs",
     "qlog/src/events/mod.rs",

@@ -1,4 +1,4 @@
-# react-router-hono-fullstack-template overview
+# python-workers-examples overview
 
 **Proxy summarize unavailable** — proceeding with metadata only.
 

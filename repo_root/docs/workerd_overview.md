@@ -2,7 +2,7 @@
 
 **Proxy summarize unavailable** — proceeding with metadata only.
 
-Error: HTTP 404: {"error":{"message":"Not Found","type":"invalid_request_error"}}
+Error: HTTP 401: {"error":{"message":"Invalid API key","type":"invalid_request_error"}}
 
 Metadata:
 ```json
@@ -511,6 +511,8 @@ Metadata:
     "src/workerd/api/filesystem.h",
     "src/workerd/api/form-data.c++",
     "src/workerd/api/form-data.h",
+    "src/workerd/api/fuzzilli.c++",
+    "src/workerd/api/fuzzilli.h",
     "src/workerd/api/global-scope.c++",
     "src/workerd/api/global-scope.h",
     "src/workerd/api/hibernatable-web-socket.c++",
@@ -1127,6 +1129,7 @@ Metadata:
     "src/workerd/jsg/dom-exception-test.c++",
     "src/workerd/jsg/dom-exception.c++",
     "src/workerd/jsg/dom-exception.h",
+    "src/workerd/jsg/exception-metadata.capnp",
     "src/workerd/jsg/exception.c++",
     "src/workerd/jsg/exception.h",
     "src/workerd/jsg/fast-api-test.c++",
@@ -1350,6 +1353,8 @@ Metadata:
     "src/workerd/tests/bench-text-encoder.c++",
     "src/workerd/tests/bench-tools.h",
     "src/workerd/tests/bench-util.c++",
+    "src/workerd/tests/libreprl/libreprl.c",
+    "src/workerd/tests/libreprl/libreprl.h",
     "src/workerd/tests/module-imports-test.js",
     "src/workerd/tests/module-imports-test.wd-test",
     "src/workerd/tests/performance-test.js",
@@ -1357,6 +1362,7 @@ Metadata:
     "src/workerd/tests/test-fixture-test.c++",
     "src/workerd/tests/test-fixture.c++",
     "src/workerd/tests/test-fixture.h",
+    "src/workerd/tests/test-reprl.c++",
     "src/workerd/tests/test.wasm",
     "src/workerd/tests/unknown-import-assertions-test.js",
     "src/workerd/tests/unknown-import-assertions-test.wd-test",
@@ -1379,8 +1385,11 @@ Metadata:
     "src/workerd/util/completion-membrane.h",
     "src/workerd/util/duration-exceeded-logger-test.c++",
     "src/workerd/util/duration-exceeded-logger.h",
+    "src/workerd/util/entropy.c++",
+    "src/workerd/util/entropy.h",
     "src/workerd/util/exception.h",
     "src/workerd/util/http-util.h",
+    "src/workerd/util/immediate-crash.h",
     "src/workerd/util/mimetype-test.c++",
     "src/workerd/util/mimetype.c++",
     "src/workerd/util/mimetype.h",

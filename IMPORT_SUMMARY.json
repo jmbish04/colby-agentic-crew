@@ -1,5 +1,5 @@
 {
-  "total": 118,
+  "total": 120,
   "mode": "vendor",
   "dry_run": true,
   "imported": [
@@ -98,55 +98,13 @@
       "repo": "cloudflare/miniflare",
       "branch": "master",
       "mode": "vendor",
-      "paths": [
-        ".github/workflows/issues.yml",
-        ".github/workflows/release.yml",
-        ".github/workflows/semgrep.yml",
-        ".github/workflows/test.yml",
-        "README.md",
-        "docs/src/content/components/icons/api.js",
-        "docs/src/content/components/icons/cli.js",
-        "docs/src/content/components/icons/wrangler.js",
-        "docs/src/content/components/mdx/config-tabs.css",
-        "docs/src/content/components/mdx/config-tabs.js",
-        "docs/src/content/core/compatibility.md",
-        "docs/src/content/core/fetch.md",
-        "docs/src/content/core/index.md",
-        "docs/src/content/core/modules.md",
-        "docs/src/content/core/multiple-workers.md",
-        "docs/src/content/core/queues.md",
-        "docs/src/content/core/scheduled.md",
-        "docs/src/content/core/standards.md",
-        "docs/src/content/core/variables-secrets.md",
-        "docs/src/content/core/web-assembly.md"
-      ]
+      "paths": []
     },
     {
       "repo": "cloudflare/workers-sdk",
       "branch": "main",
       "mode": "vendor",
-      "paths": [
-        ".github/workflows/README.md",
-        ".github/workflows/auto-assign-issues.yml",
-        ".github/workflows/c3-dependabot-versioning-prs.yml",
-        ".github/workflows/c3-e2e.yml",
-        ".github/workflows/changesets.yml",
-        ".github/workflows/claude.yml",
-        ".github/workflows/deploy-pages-previews.yml",
-        ".github/workflows/e2e-project-cleanup.yml",
-        ".github/workflows/e2e.yml",
-        ".github/workflows/holopin.yml",
-        ".github/workflows/hotfix-release.yml",
-        ".github/workflows/issues.yml",
-        ".github/workflows/miniflare-dependabot-versioning-prs.yml",
-        ".github/workflows/open-v3-maintenance-prs.yml",
-        ".github/workflows/prerelease.yml",
-        ".github/workflows/run-ci-for-external-forks.yml",
-        ".github/workflows/semgrep.yml",
-        ".github/workflows/test-and-check.yml",
-        ".github/workflows/validate-pr-description.yml",
-        ".github/workflows/worker-playground-preview-testing-env-deploy-and-test.yml"
-      ]
+      "paths": []
     },
     {
       "repo": "cloudflare/capnweb",
@@ -173,13 +131,13 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/agents",
+      "repo": "cloudflare/vibesdk",
       "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/vibesdk",
+      "repo": "cloudflare/agents",
       "branch": "main",
       "mode": "vendor",
       "paths": []
@@ -209,13 +167,13 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/wrangler-action",
+      "repo": "cloudflare/workers-oauth-provider",
       "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/workers-oauth-provider",
+      "repo": "cloudflare/wrangler-action",
       "branch": "main",
       "mode": "vendor",
       "paths": []
@@ -281,14 +239,14 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/mitmengine",
-      "branch": "master",
+      "repo": "cloudflare/ai",
+      "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/ai",
-      "branch": "main",
+      "repo": "cloudflare/mitmengine",
+      "branch": "master",
       "mode": "vendor",
       "paths": []
     },
@@ -347,13 +305,13 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/pages-action",
+      "repo": "cloudflare/sandbox-sdk",
       "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/sandbox-sdk",
+      "repo": "cloudflare/pages-action",
       "branch": "main",
       "mode": "vendor",
       "paths": []
@@ -407,14 +365,14 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/pmtud",
-      "branch": "master",
+      "repo": "cloudflare/actors",
+      "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/actors",
-      "branch": "main",
+      "repo": "cloudflare/pmtud",
+      "branch": "master",
       "mode": "vendor",
       "paths": []
     },
@@ -432,6 +390,12 @@
     },
     {
       "repo": "cloudflare/containers",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/python-workers-examples",
       "branch": "main",
       "mode": "vendor",
       "paths": []
@@ -533,14 +497,20 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/workers-react-pwa-example",
-      "branch": "master",
+      "repo": "cloudflare/telescope",
+      "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
       "repo": "cloudflare/web-bot-auth",
       "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/workers-react-pwa-example",
+      "branch": "master",
       "mode": "vendor",
       "paths": []
     },
@@ -581,12 +551,6 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/telescope",
-      "branch": "main",
-      "mode": "vendor",
-      "paths": []
-    },
-    {
       "repo": "cloudflare/docker-phan",
       "branch": "master",
       "mode": "vendor",
@@ -613,6 +577,12 @@
     {
       "repo": "cloudflare/durable-objects-typescript-rollup-esm",
       "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/moq-rs",
+      "branch": "main",
       "mode": "vendor",
       "paths": []
     },
