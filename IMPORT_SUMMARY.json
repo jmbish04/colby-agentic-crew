@@ -167,13 +167,13 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/workers-oauth-provider",
+      "repo": "cloudflare/wrangler-action",
       "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/wrangler-action",
+      "repo": "cloudflare/workers-oauth-provider",
       "branch": "main",
       "mode": "vendor",
       "paths": []
@@ -233,13 +233,13 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/partykit",
+      "repo": "cloudflare/ai",
       "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/ai",
+      "repo": "cloudflare/partykit",
       "branch": "main",
       "mode": "vendor",
       "paths": []
@@ -359,13 +359,13 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/kv-asset-handler",
+      "repo": "cloudflare/actors",
       "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/actors",
+      "repo": "cloudflare/kv-asset-handler",
       "branch": "main",
       "mode": "vendor",
       "paths": []
@@ -431,13 +431,13 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/cfnts",
+      "repo": "cloudflare/queues-web-crawler",
       "branch": "master",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/queues-web-crawler",
+      "repo": "cloudflare/cfnts",
       "branch": "master",
       "mode": "vendor",
       "paths": []
@@ -563,13 +563,19 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/authr",
+      "repo": "cloudflare/vibesdk-templates",
       "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/vibesdk-templates",
+      "repo": "cloudflare/moq-rs",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/authr",
       "branch": "main",
       "mode": "vendor",
       "paths": []
@@ -581,12 +587,6 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/moq-rs",
-      "branch": "main",
-      "mode": "vendor",
-      "paths": []
-    },
-    {
       "repo": "cloudflare/react-workers-template",
       "branch": "master",
       "mode": "vendor",
@@ -594,6 +594,12 @@
     },
     {
       "repo": "cloudflare/wasm-coredump",
+      "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/awesome-agents",
       "branch": "main",
       "mode": "vendor",
       "paths": []
@@ -625,12 +631,6 @@
     {
       "repo": "cloudflare/cloudflare-plugin-frontend",
       "branch": "master",
-      "mode": "vendor",
-      "paths": []
-    },
-    {
-      "repo": "cloudflare/awesome-agents",
-      "branch": "main",
       "mode": "vendor",
       "paths": []
     },
@@ -683,6 +683,12 @@
       "paths": []
     },
     {
+      "repo": "cloudflare/durable-objects-webpack-commonjs",
+      "branch": "master",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
       "repo": "cloudflare/redux-grim",
       "branch": "master",
       "mode": "vendor",
@@ -691,12 +697,6 @@
     {
       "repo": "cloudflare/privacy-gateway-client-library",
       "branch": "main",
-      "mode": "vendor",
-      "paths": []
-    },
-    {
-      "repo": "cloudflare/durable-objects-webpack-commonjs",
-      "branch": "master",
       "mode": "vendor",
       "paths": []
     },
@@ -731,19 +731,13 @@
       "paths": []
     },
     {
-      "repo": "cloudflare/developer-summer-challenge",
-      "branch": "master",
-      "mode": "vendor",
-      "paths": []
-    },
-    {
       "repo": "cloudflare/hello-world-container-image",
       "branch": "main",
       "mode": "vendor",
       "paths": []
     },
     {
-      "repo": "cloudflare/ui-migration-stats",
+      "repo": "cloudflare/developer-summer-challenge",
       "branch": "master",
       "mode": "vendor",
       "paths": []
@@ -751,6 +745,12 @@
     {
       "repo": "cloudflare/realtimekit-web-examples",
       "branch": "main",
+      "mode": "vendor",
+      "paths": []
+    },
+    {
+      "repo": "cloudflare/ui-migration-stats",
+      "branch": "master",
       "mode": "vendor",
       "paths": []
     },
